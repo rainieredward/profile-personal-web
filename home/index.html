@@ -3,101 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile Website</title>
+    <title>Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            color: navy;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
         }
         header {
-            background-color: navy;
-            color: white;
-            padding: 10px 20px;
+            background-color: #001f3f;
+            color: #ffffff;
+            padding: 15px 20px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
         }
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 1.5em;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            flex: 1;
+        }
+        header .location {
+            font-size: 1em;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
-            color: navy;
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            text-align: center;
         }
-        hr {
-            border: 1px solid navy;
+        .section {
+            margin-bottom: 30px;
         }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: navy;
-            color: white;
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #001f3f;
+            color: #ffffff;
+        }
+        footer a {
+            color: #61dafb;
             text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background-color: #004080;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Wordwide</h1>
+        <h1>Worldwide</h1>
+        <div class="location">Personal Profile Website</div>
     </header>
     <div class="container">
-        <h1>Personal Profile Website</h1>
-        <h2>About Me</h2>
-        <p>
-            I am Rainier Edward Lopez, also known as Nyeng. I am known for being physically active as I play Flag Football.
-        </p>
-        <hr>
-        <h2>Education</h2>
-        <p>
-            <strong>Junior High School:</strong> Pasay City West High School<br>
-            <strong>Senior High School:</strong> Asia Pacific College<br>
-            <strong>College:</strong> Asia Pacific College
-        </p>
-        <hr>
-        <h2>Course</h2>
-        <p>
-            Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies
-        </p>
-        <hr>
-        <h2>IT Experience</h2>
-        <ul>
-            <li>Basic Codes of Java</li>
-            <li>Basic Codes of Python</li>
-            <li>Basic Knowledge in Figma</li>
-            <li>Created an app using Figma & Android Studio</li>
-        </ul>
-        <hr>
-        <h2>Hobbies & Interests</h2>
-        <ul>
-            <li>Flag Football</li>
-            <li>Cycling</li>
-            <li>Video Games</li>
-            <li>Adventures</li>
-        </ul>
-        <hr>
-        <h2>Goals in Life</h2>
-        <p>
-            Financial Freedom
-        </p>
-        <hr>
-        <h2>Contact Information</h2>
-        <p>
-            <strong>Location:</strong> Pasay, 1630
-        </p>
-        <a href="https://www.instagram.com/rainieredward_/" target="_blank" class="button">Visit My Instagram</a>
+        <!-- Header -->
+        <header>
+            <h2 style="text-align: center;">Rainier Edward Lopez</h2>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h3>About Me</h3>
+            <div class="card">
+                <p>I am Rainier Lopez, also known as Nyeng. As an active individual with a passion for Flag Football, I bring the same dedication and team spirit to my IT studies. Currently pursuing a Bachelor's degree in Information Technology with a focus on Mobile and Internet Technologies at Asia Pacific College.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section>
+            <h3>Education</h3>
+            <div class="card">
+                <h4>College</h4>
+                <p>Asia Pacific College</p>
+                <p>BS Information Technology - Mobile and Internet Technologies</p>
+            </div>
+
+            <div class="card">
+                <h4>Senior High School</h4>
+                <p>Asia Pacific College</p>
+            </div>
+
+            <div class="card">
+                <h4>Junior High School</h4>
+                <p>Pasay City West High School</p>
+            </div>
+        </section>
+
+        <!-- IT Experience Section -->
+        <div class="section">
+            <h3>IT Experience</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>Java</h4>
+                    <p>Basic</p>
+                </div>
+                <div class="card">
+                    <h4>Python</h4>
+                    <p>Basic</p>
+                </div>
+                <div class="card">
+                    <h4>Figma</h4>
+                    <p>Basic</p>
+                </div>
+                <div class="card">
+                    <h4>Android Studio</h4>
+                    <p>Basic</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies & Interests Section -->
+        <div class="section">
+            <h3>Hobbies & Interests</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="hobby_flag_football.jpg" alt="Flag Football">
+                    <h4>Flag Football</h4>
+                </div>
+                <div class="card">
+                    <img src="hobby_cycling.jpg" alt="Cycling">
+                    <h4>Cycling</h4>
+                </div>
+                <div class="card">
+                    <img src="hobby_video_games.jpg" alt="Video Games">
+                    <h4>Video Games</h4>
+                </div>
+                <div class="card">
+                    <img src="hobby_adventures.jpg" alt="Adventures">
+                    <h4>Adventures</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Goals Section -->
+        <div class="section">
+            <h3>Goals in Life</h3>
+            <div class="card">
+                <h4>Financial Freedom</h4>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Location: Pasay, 1630</p>
+        <p><a href="https://www.instagram.com/rainieredward_/" target="_blank">Instagram</a></p>
+    </footer>
 </body>
 </html>
